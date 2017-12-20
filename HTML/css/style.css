@@ -758,8 +758,41 @@ Work Experience Section
 	margin-bottom: 1em;
 }
 
+/* -------------------------------- 
 
+Work Experience Page Style
 
+-------------------------------- */
+
+.cd-container-work-entry {
+	width: 1200px;
+	text-align: left;
+	margin: auto;
+}
+
+.cd-container-work-entry h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5em;
+}
+
+.cd-container-work-entry h4 {
+	font-size: 1.2rem;
+	margin-bottom: 0.25em;
+}
+
+.cd-container-work-entry p {
+	font-size: 1.2rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.cd-container-work-entry ul {
+	list-style-type: circle;
+}
+
+.cd-container-work-entry li {
+	font-size: 1.2rem;
+}
 
 /* -------------------------------- 
 
