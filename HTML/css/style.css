@@ -90,6 +90,14 @@ a {
   text-decoration: none;
 }
 
+/* Anchor to position screen correctly for links */
+a.anchor {
+	display: block;
+	position: relative;
+	top: -150px;
+	visibility: hidden;
+}
+
 i {
     font-style: italic;
 }
@@ -133,6 +141,7 @@ h6 {
 li {
 	margin-bottom: 0.3rem;
 }
+
 
 
 
@@ -541,6 +550,8 @@ NAVIGATION BAR
 The .cd-intro change the background image
 
 -------------------------------- */
+
+/*
 .cd-intro {
   position: relative;
   height: 100%;
@@ -595,13 +606,16 @@ The .cd-intro change the background image
   }
 }
 
+*/
+
 .cd-main-content {
   position: relative;
   z-index: 1;
 }
 .cd-main-content p {
-  line-height: 1.6;
-  margin: 2em 0;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 .cd-main-content-about p {
   font-size: 1.2em;
@@ -686,18 +700,20 @@ The .cd-intro change the background image
 About Me section
 
 -------------------------------- */
+.cd-container-about {
+	width: 100%;
 
-.about-me-section {
+}
+
+
+.about-me-bg {
 	/* Image Source */
 	background: 
 		linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
 		url(../img/gatineau_park.jpg);
 		
-	
-	
-	/* Width and Height of image*/
-	width: 100%;
-	height: 100%;
+	/* Width and Height of image */
+	height: 50%;
 	
 	/* Position and center the screen */
     background-position: center;
@@ -707,12 +723,11 @@ About Me section
 	
 }
 
+
 .about-me-text {
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin: auto;
+	width: 60%;
 	color: white;
 }
 
@@ -757,12 +772,6 @@ Work Experience Section
 	font-weight: 700;
 }
 
-.cd-container-work-text p {
-	font-size: 1.2rem;
-	margin-bottom: 2em;
-	line-height: 2rem;
-}
-
 .cd-container-people {
 	width: 900px;
 	margin: auto;
@@ -805,6 +814,7 @@ Work Experience Section
 	width: 100%;
 	font-size: 1.2rem;
 	margin-bottom: 1em;
+	line-height: 1.2;
 }
 
 /* -------------------------------- 
