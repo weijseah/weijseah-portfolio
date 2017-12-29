@@ -22,10 +22,10 @@
 
         // create points
         points = [];
-        for(var x = 0; x < width; x = x + width/20) {
-            for(var y = 0; y < height; y = y + height/20) {
-                var px = x + Math.random()*width/20;
-                var py = y + Math.random()*height/20;
+        for(var x = 0; x < width; x = x + 96) {
+            for(var y = 0; y < height; y = y + 54) {
+                var px = x + Math.random()*96;
+                var py = y + Math.random()*54;
                 var p = {x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
@@ -102,6 +102,9 @@
         largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
+		
+		initHeader();
+		initAnimation();
     }
 
     // animation
