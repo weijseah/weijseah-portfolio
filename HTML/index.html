@@ -16,47 +16,57 @@
 	<link rel="stylesheet" href="css/animated-bg.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
+	
 	<title>Wei Jie Seah's Portfolio</title>
 </head>
 <body>
-	<div id="header">
-	
-		<ul>
-
-			<li><a href="#large-header">Home</a></li>
-			<li><a href="../work-experience.html">Work Experience</a></li>
-			<li><a href="../projects.html">Extracurricular Projects</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-			
-		</ul>
+	<div id = "nav" class="navbar">
+		<a href="#about">Profile</a>
+		<a href="#work">Work Experience</a>
+		<a href="#large-header"><img src ="img/logo-elegant.png"></img></a>
+		<a href="#projects">Extracurricular</a>
+		<a href="#contact">Contact Me</a>
+		<a href="javascript:void(0);" class="icon" onclick="expandNav()">&#9776;</a>
 	</div>
 
 	<div id="large-header" class="large-header">
 		<canvas id="demo-canvas"></canvas>
-		<h1 class="main-title">Welcome to my portfolio!</h1>
+		<div class="main-title">
+			<h1 style = "font-weight = 100;"><b> wei jie seah</b></h1>
+			<h1 style = "font-family = 'CharlevoixPro-Thin'; font-weight: 100;">Welcome to my portfolio!</h1>
+		</div>
+			
 	</div>
 
 
 	<main id="more" class="cd-main-content">
 
 <!-- About Me Section -->
-	
+	<!-- Anchor used to position screen properly -->
+	<a id="about" class="anchor" style="top:-75px"></a>
 	<div class="about-me-bg">
 		<div class="cd-container-about-text">
 			<h3 style="color:white">About Me</h3>
 			<h1>Profile</h1>
-			<p>Mechanical engineering student with great interest in automotive engineering and motorsports. Experience using MATLAB and Simulink for hardware testing and system simulation for automotive applications.  Formula SAE powertrain member with experience using engine management and data acquisition systems to analyze and optimize engine performance.  Enjoy working in a collaborative, team environment.</p>
+			<p>Mechanical engineering student with great interest in automotive engineering and motorsports. 
+			Experience using MATLAB and Simulink for hardware testing and system simulation for automotive applications.
+			Formula SAE powertrain member with experience using engine management and data acquisition systems to analyze
+			and optimize engine performance.  Enjoy working in a collaborative, team environment.
+			</p>
 		</div>
 	</div>
 
 
 <!-- Work Experience Section -->
-
+	<!-- Anchor used to position screen properly -->
+	<a id="work" class="anchor" style="top: 0px"></a>
 	<div class="cd-container-work">
 		<div class="cd-container-work-text">
 			<h3>What I've Done</h3>
 			<h1>Work Experience</h1>
-			<p> Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. </p>
+			<p>Progressing through my undergraduate degree, I have taken the opportunity to complete work terms
+			where I applied some of the technical knowledge taught in school to solve real-world engineering problems.
+			</p>
 		</div>		
 		<div class="cd-container-people">
 
@@ -70,7 +80,7 @@
 				</div>
 				<div class="cd-container-button">
 					<a href = "../HTML/work-experience.html#gm"> 
-						<button class="button-1">More info </button>
+						<button class="button-1">More info</button>
 					</a>
 				</div>	
 			</div>
@@ -80,11 +90,13 @@
 					<h4>BMT Fleet Technology</h4>
 					<h2>Mechanical Engineering Co-op Student</h2>
 					<h4>May 2016 - August 2016</h4>
-					<p>HVAC system analysis, line diagram modelling for auxiliary ship systems, developed solution for air conditioning unit installation</p>
+					<p>HVAC system analysis, line diagram modelling for auxiliary ship systems, developed solution 
+					for air conditioning unit installation
+					</p>
 				</div>
 				<div class="cd-container-button">
 					<a href = "../HTML/work-experience.html#bmt"> 
-						<button class="button-1">More info </button>
+						<button class="button-1">More info</button>
 					</a>
 				</div>
 			</div>
@@ -94,11 +106,13 @@
 					<h4>Carleton University</h4>
 					<h2>Research Assistant</h2>
 					<h4>May 2015 - August 2015</h4>
-					<p>Designed and manufactured an aluminum 3D printer, experimented with Arduino for stepper motor control </p>
+					<p>Designed and manufactured an aluminum 3D printer, worked with Arduino for
+					stepper motor control 
+					</p>
 				</div>
 				<div class="cd-container-button">
 					<a href = "../HTML/work-experience.html#carleton"> 
-						<button class="button-1">More info </button>
+						<button class="button-1">More info</button>
 					</a>
 				</div>
 			</div>
@@ -109,29 +123,51 @@
 
 
 <!-- Extracurricular Projects Section  -->
-		
-		<div id="projects" class="cd-container-projects">
+		<!-- Anchor used to position screen properly -->
+		<a id="projects" class="anchor"></a>
+		<div class="cd-container-projects">
 			<div class="cd-container-projects-text">
 				<h3>Beyond work and school</h3>
 				<h1>Extracurricular Projects</h1>
-				<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+				<p>Outside of work and school, I like to take on projects that allow me to 
+				showcase my creativity, satisfy my curiosity, and challenge me to learn something new every day.
+				</p>
+			</div>
+		
+			<!-- FSAE -->
+			<div class = "cd-container-projects-thumb">
+				<a href="../HTML/projects.html">
+					<img src = "img/carleton-fsae.jpg" alt = "">
+				</a>
 			</div>
 			
+			<!-- Sim Rig -->
+			<div class = "cd-container-projects-thumb">
+				<a href="../HTML/projects.html">
+					<img src = "img/carleton-fsae.jpg" alt = "">
+				</a>
+			</div>
+			
+			<!-- Website -->
+			<div class = "cd-container-projects-thumb">
+				<a href="../HTML/projects.html">
+					<img src = "img/carleton-fsae.jpg" alt = "">
+				</a>
+			</div>
+			
+			<!-- Photography -->
 			<div class = "cd-container-projects-thumb">
 				<a href="../HTML/projects.html">
 					<img src = "img/mclaren.jpg" alt = "">
 				</a>
 			</div>
 			
-			<div class = "cd-container-projects-thumb">
-				<a href="../HTML/projects.html">
-					<img src = "img/carleton-fsae.jpg" alt = "">
-				</a>
-			</div>
+
 		
 		</div>
 
 <!-- Contact Me Section -->
+		<!-- Anchor used to position screen properly -->
 		<a id="contact" class="anchor"></a>
 		<div class="cd-container">
 			<h3>Let's talk</h3>
@@ -139,47 +175,27 @@
 
 			
 			<div class="cd-container-contact">
-				<div class="cd-container-contact-clmn-2" style="padding-bottom: 0px;">
-					<div class="contact-1">
-						<div class="contact-clmn-content">
-							<h4>Current Location</h4>
-							<p>Ottawa, Ontario, Canada</p>
-						</div>
-					</div>
-					<div class="contact-2">
-						<div class="contact-clmn-content">
-							<h4>Phone</h4>
-							<p>
-								+88 (0) 101 0000 000
-								<br>
-								+88 (0) 101 0000 000
-							</p>
-						</div>
-					</div>
+				<div class = "cd-container-contact-item">
+					<h3> Current Location </h3>
+					<p> Ottawa, Ontario, Canada </p>
 				</div>
 				
-				<div class="cd-container-contact-clmn-2">
-					<div class="contact-1">
-						<div class="contact-clmn-content">
-							<h4>LinkedIn</h4>
-							<p>
-							   +88 (0) 202 0000 000
-							   <br>
-							   +88 (0) 202 0000 000
-							</p>
-						</div>
-					</div>
-					<div class="contact-2">
-						<div class="contact-clmn-content">
-							<h4>Email</h4>
-							<p>
-							   e@elegant.com
-							   <br>
-							   c@elegant.com
-							</p>
-						</div>
-					</div>
+				<div class = "cd-container-contact-item">
+					<h3> Phone </h3>
+					<p> 123-456-7890 </p>
 				</div>
+				
+				<div class = "cd-container-contact-item">
+					<h3> LinkedIn </h3>
+					<p> <a href="www.linkedin.com/in/wei-jie-seah-9b8498a2" target="_blank"> Wei Jie's LinkedIn Profile</a> </p>
+				</div>
+				
+				<div class = "cd-container-contact-item">
+					<h3> Email </h3>
+					<p> blah@blah.com </p>
+				</div>
+			
+
 			</div>
 		</div>
 
@@ -222,6 +238,26 @@ $(function() {
     }
   });
 });
+</script>
+
+<!--Script to control responsive nav bar -->
+<script>
+	//open/close primary navigation
+	function expandNav() {
+		var $nav = $(".navbar")
+		var x = document.getElementById("nav");
+		// If nav bar is collapsed, expand. Otherwise, collapse the navbar.
+		if (x.className == "navbar" || x.className == "navbar scrolled") {
+			x.className = "navbarresponsive";
+		} else {
+			// Check to see whether to restore the nav bar to scrolled or unscrolled state.
+			if ($(this).scrollTop() > $nav.height()) {
+				x.className = "navbar scrolled";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	}
 </script>
 
 </body>

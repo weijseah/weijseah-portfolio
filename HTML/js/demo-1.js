@@ -1,6 +1,6 @@
 (function() {
 
-    var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+    var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true, globalResizeTimer = null;
 
     // Main
     initHeader();
@@ -19,6 +19,8 @@
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext('2d');
+		
+
 
         // create points
         points = [];
@@ -74,7 +76,7 @@
             window.addEventListener('mousemove', mouseMove);
         }
         window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
+        //window.addEventListener('resize', resize);
     }
 
     function mouseMove(e) {
@@ -95,17 +97,37 @@
         if(document.body.scrollTop > height) animateHeader = false;
         else animateHeader = true;
     }
+	
+	// Resize animation scope upon window resize
+	$(window).resize(function() {
+		clearTimeout(window.resizedFinished);
+		window.resizedFinished = setTimeout(function() {
+			console.log('Resized finished.');
+			resize();
+		}, 250);
+	});
 
     function resize() {
-        width = window.innerWidth;
+		
+		initHeader();
+		initAnimation();
+		
+    }
+	
+	function clearCanvas() {
+		canvas = document.getElementById('demo-canvas');
+		width = window.innerWidth;
         height = window.innerHeight;
         largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
+		ctx = canvas.getContext('2d');
 		
-		initHeader();
-		initAnimation();
-    }
+		// Clear canvas
+		//ctx.setTransform(1,0,0,1,0,0);
+		ctx.clearRect(0,0,canvas.width, canvas.height);
+	}
+	
 
     // animation
     function initAnimation() {
