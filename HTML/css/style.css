@@ -76,7 +76,7 @@ Light Burgandy: rgb(168, 100, 111)
 
 body {
   font-size: 100%;
-  font-family: 'CharlevoixPro-Thin';
+  font-family: 'CharlevoixPro-Light';
   font-weight: 300;
   color: rgba(2, 23, 37, 0.7);
   background-color: white;
@@ -183,12 +183,13 @@ NAVIGATION BAR
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 80px;
+	height: 82px;
 	z-index: 2;
-	background-color: transparent;
+	background-color: rgba(0,0,0,0.35);
 	text-align: center;
 	color: white;
 	transition: background-color 200ms linear;
+	padding-left: 18px; /* Adjust to center logo in the middle of the screen */
 }
 
 .navbar.scrolled {
@@ -212,11 +213,11 @@ NAVIGATION BAR
 	padding-right: 10px;
 }
 
-.navbar img{
-	display: table-cell;
-	vertical-align: top;
-	text-align: center;
-	height: 100%;
+.navbar h1{
+	font-size: 2.5rem; 
+	font-family: 'CharlevoixPro-Medium'; 
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .navbar .icon {
@@ -231,12 +232,12 @@ NAVIGATION BAR
 	
 	.navbar a {
 		float: left;
+		line-height: 60px;
 	}
 	
 	.navbar .icon {
 		float: right;
 		display: inline-block;
-		transform: translateY(-20%);
 	}
 	.navbar a:not(:nth-child(3n)) {
 		display: none;
