@@ -189,7 +189,7 @@ NAVIGATION BAR
 	text-align: center;
 	color: white;
 	transition: background-color 200ms linear;
-	padding-left: 18px; /* Adjust to center logo in the middle of the screen */
+	padding-left: 19px; /* Adjust to center logo in the middle of the screen */
 }
 
 .navbar.scrolled {
