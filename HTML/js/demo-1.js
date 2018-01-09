@@ -3,9 +3,14 @@
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true, globalResizeTimer = null;
 
     // Main
-    initHeader();
-    initAnimation();
-    addListeners();
+	initHeader();
+	// Check if user is on a mobile device. If so, do not run the animation (slow performance)
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+	} else {
+		initAnimation();
+		addListeners();
+	}
 
     function initHeader() {
         width = window.innerWidth;
@@ -109,10 +114,14 @@
 	});
 
     function resize() {
-		
 		initHeader();
-		initAnimation();
-		addListeners();
+		// Check if user is on a mobile device. If so, do not run the animation (slow performance)
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+		} else {
+			initAnimation();
+			addListeners();
+		}
     }
 	
 	function clearCanvas() {
