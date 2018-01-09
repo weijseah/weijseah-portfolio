@@ -192,7 +192,7 @@ NAVIGATION BAR
 	padding-left: 19px; /* Adjust to center logo in the middle of the screen */
 }
 
-.navbar.scrolled {
+.navbar .scrolled {
 	background-color: white;
 	color: black;
 	height: 82px;
@@ -234,6 +234,11 @@ NAVIGATION BAR
 		float: left;
 		line-height: 60px;
 	}
+	
+	.navbar h1{
+    	padding-left: 0;
+    	padding-right: 0;
+    }
 	
 	.navbar .icon {
 		float: right;
@@ -395,23 +400,18 @@ About Me section
 
 
 .about-me-bg {
-	/* Image Source */
-	background: 
-		linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-		url(../img/gatineau_park.jpg);
-		
-	/* Width and Height of image */
-	max-width: 100%;
+	width: 100%;
 	height: 100%;
 	
-	/* Position and center the screen */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+	background-image: url(http://wjsportfolio.ca/img/gatineau-park.jpg);
 	
+	/* Position and center the screen */
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
-
 
 .cd-container-about-text {
 	text-align: center;
@@ -425,7 +425,7 @@ About Me section
 
 @media (max-width:960px) {
 	.cd-container-about-text {
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -524,11 +524,11 @@ Work Experience Section
 
 @media (max-width:1000px) {
 	.cd-container-work-text {
-		width: 95%;
+		width: 90%;
 	}
 	
 	.cd-container-people {
-		width: 95%;
+		width: 90%;
 	}
 }
 
@@ -540,7 +540,7 @@ Work Experience Section
 
 @media (max-width:500px) {
 	.cd-container-people-clmn {
-		width: 95%;
+		width: 90%;
 	}
 }
 
@@ -695,11 +695,13 @@ Work Experience Page Style
 
 .cd-container-work-entry li {
 	font-size: 1.2rem;
+	line-height: 1.5rem;
 }
 
 @media (max-width:1000px) {
 	.cd-container-work-entry {
 		width: 90%;
+		padding-left: 15px;
 	}
 }
 
