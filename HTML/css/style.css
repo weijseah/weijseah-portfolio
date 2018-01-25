@@ -192,7 +192,7 @@ NAVIGATION BAR
 	padding-left: 19px; /* Adjust to center logo in the middle of the screen */
 }
 
-.navbar .scrolled {
+.navbar.scrolled {
 	background-color: white;
 	color: black;
 	height: 82px;
@@ -579,6 +579,35 @@ Projects Section Style
 	vertical-align: top;
 }
 
+.cd-container-projects-thumb-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	color: white;
+	
+	visibility: hidden;
+	opacity: 0;
+	
+	transition: visibility 0.5s, opacity 0.5s;
+}
+
+.cd-container-projects-thumb-overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.cd-container-projects-thumb:hover .cd-container-projects-thumb-overlay {
+	visibility: visible;
+	opacity: 1;
+}
 
 @media (max-width:1600px) {
 	.cd-container-projects-text {
@@ -726,6 +755,32 @@ Projects Page Style
 	text-align: left;
 }
 
+.cd-container-projects-entry h4 {
+	font-size: 1.2rem;
+	margin-bottom: 0.25em;
+}
+
+.cd-container-projects-entry p {
+	font-size: 1.2rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.cd-container-projects-entry ul {
+	list-style-type: circle;
+}
+
+.cd-container-projects-entry li {
+	font-size: 1.2rem;
+}
+
+@media (max-width:1000px) {
+	.cd-container-projects-entry {
+		width: 90%;
+	}
+}
+
+
 .cd-container-projects-banner {
 	width: 100%;
 	margin: auto;
@@ -752,41 +807,42 @@ Projects Page Style
 
 .banner-overlay-text {
 	position: absolute;
+	width: 100%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
-.cd-container-projects-entry h1 {
-	font-size: 2rem;
+.banner-overlay-text h1 {
+	font-size: 3rem;
 	margin-bottom: 0.5em;
 }
 
-.cd-container-projects-entry h4 {
-	font-size: 1.2rem;
-	margin-bottom: 0.25em;
-}
-
-.cd-container-projects-entry p {
-	font-size: 1.2rem;
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-.cd-container-projects-entry ul {
-	list-style-type: circle;
-}
-
-.cd-container-projects-entry li {
-	font-size: 1.2rem;
-}
-
-@media (max-width:1000px) {
-	.cd-container-projects-entry {
-		width: 90%;
+@media (max-width:600px) {
+	.banner-overlay-text h1 {
+		font-size: 2.5rem;
 	}
 }
+
+@media (max-width:475px) {
+	.banner-overlay-text h1 {
+		font-size: 2rem;
+	}
+	
+	.cd-container-projects-entry p {
+	font-size: 1.0rem;
+	}
+}
+
+@media (max-width:350px) {
+	.banner-overlay-text h1 {
+		font-size: 1.5rem;
+	}
+}
+
+
+
 
 /* -------------------------------- 
 
