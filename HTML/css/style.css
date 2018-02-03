@@ -192,7 +192,7 @@ NAVIGATION BAR
 	padding-left: 19px; /* Adjust to center logo in the middle of the screen */
 }
 
-.navbar .scrolled {
+.navbar.scrolled {
 	background-color: white;
 	color: black;
 	height: 82px;
@@ -868,7 +868,7 @@ Slideshow Style
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -900,7 +900,7 @@ Slideshow Style
 
 .dot {
   cursor: pointer;
-  height: 100%;
+  height: auto;
   width: 104px;
   display: inline-block;
   transition: opacity 0.6s ease;
@@ -929,6 +929,17 @@ Slideshow Style
   to {opacity: 1}
 }
 
+@media (max-width:600px) {
+	.text {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width:400px) {
+	.text {
+		display: none;
+	}
+}
 
 
 
